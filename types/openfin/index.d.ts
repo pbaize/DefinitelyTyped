@@ -247,6 +247,16 @@ declare namespace fin {
          */
         autoShow?: boolean;
         /**
+         * The window’s backfill color as a hexadecimal value.
+         * Not to be confused with the content background color (document.body.style.backgroundColor)
+         * This color briefly fills a window’s
+         * (a) content area before its content is loaded as well as
+         * (b) newly exposed areas when growing a window.
+         * Setting this value to the anticipated content background color can help improve user experience.
+         * Default: '#FFF'.
+         */
+        backgroundColor?: string;
+        /**
          * A flag to show the context menu when right-clicking on a window. Gives access to the Developer Console for the Window. Default: true
          * Updatable
          */
